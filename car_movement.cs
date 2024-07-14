@@ -231,7 +231,6 @@ public class car_movement : MonoBehaviour
         UIText();
         Brakes();
         limter();
-        Debug.Log(colliders.FL.brakeTorque);
         
     }
 
