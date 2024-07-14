@@ -205,18 +205,15 @@ public class car_movement : MonoBehaviour
 // Displays speed and handbrake status to screen
     void UIText()
     {
-        TMPro_text.Speed1.text = $"Speed:{speedkmph_string}";
-        TMPro_text.Speed3.text = $"Speed:{speedkmph_string}";
+        TMPro_text.Speed.text = $"Speed:{speedkmph_string}";
         
         if (hbrake_on_off)
         {
-            TMPro_text.Handbrake1.text = "HandBrake: ON";
-            TMPro_text.Handbrake3.text = "HandBrake: ON";
+            TMPro_text.Handbrake.text = "HandBrake: ON";
         }
         else
         {
-            TMPro_text.Handbrake1.text = "HandBrake: OFF";
-            TMPro_text.Handbrake3.text = "HandBrake: OFF";
+            TMPro_text.Handbrake.text = "HandBrake: OFF";
         }
         
     }
@@ -268,10 +265,9 @@ public class car_movement : MonoBehaviour
     [System.Serializable]
     public class TMProText
     {
-        public TMP_Text Speed1;
-        public TMP_Text Speed3;
-        public TMP_Text Handbrake1;
-        public TMP_Text Handbrake3;
+        public TMP_Text Speed;
+        public TMP_Text Handbrake;
+        
     }
 
 }
